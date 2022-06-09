@@ -1,4 +1,0 @@
-- Carne
-- Pollo
-- Atún
-- Huevos
