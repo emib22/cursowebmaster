@@ -24,7 +24,7 @@
     order: 10;
     margin-left: 50px;
     border-bottom: 1px solid white;
-    color: white;
+    color: aliceblue;
 }
 
 .head__titulos h1 {
@@ -134,5 +134,19 @@
 
 textarea {
     height: 75px;
-    
+}
+
+footer {
+    text-align: center;
+    background-color: #009393;
+    padding: 100px;
+}
+
+footer a {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+footer h2 {
+    color: aliceblue;
 }
