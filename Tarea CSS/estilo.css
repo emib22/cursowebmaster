@@ -4,6 +4,8 @@
     box-sizing: border-box;
     box-sizing: inherit;
     font-family: Arial, Helvetica, sans-serif;
+    /*font-family: 'Kalam', cursive;
+    font-family: 'Staatliches', cursive;*/
 }
 
 .contenedor_head {
@@ -30,16 +32,17 @@
 .head__titulos h1 {
     font-size: 4rem;
     font-weight: 250;
+    font-family: 'Staatliches', cursive;
 }
 
 .img__head {
     width: 250px;
     height: 250px;
     margin-left: 20px;
-    border-radius: 50%;
+    border-radius: 50px;
     overflow: hidden;
     order: 1;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid aliceblue;
 
 }
 
@@ -61,41 +64,52 @@
     align-items: center;*/
 
 }
+
 .sobre_mi h2 {
     padding: 20px;
     font-size: 36px;
     font-weight: bold;
-    font-style: italic;
-    color: whitesmoke;
+    font-family: 'Kalam', cursive;
+    color: aliceblue;
+    text-decoration-line: underline;
 }
+
 .sobre_mi h3 {
     padding: 10px;
     font-size: 20px;
     background-color: #009393;
-    color: whitesmoke;
+    color: aliceblue;
 }
 
 .parrafos {
     display: flex;
-    width: 100%;
-    height: 400px;
-    justify-content: space-evenly;
-   /* outline: 2px solid red;*/
+    justify-content: space-around;
+    /* outline: 2px solid red; */
 }
-.parrafos p{
+
+.parrafos p {
     text-align: center;
+    font-family: 'Kalam', cursive;
 }
 
 .parrafos__contenido {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    width: 250px;
+    height: 250px;
     margin: 100px 40px;
     padding: 10px;
-    border-radius: 10%;
-    border: 2px solid #009393;    
+    border-radius: 10px;
+    border: 2px solid #009393;
     overflow: hidden;
     box-shadow: 0 8px 2px -2px #009393;
+    transition: all 1s;
+}
+
+.parrafos__contenido:hover {
+    width: 275px;
+    height: 275px;
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 .megustan {
@@ -108,10 +122,26 @@
     background-color: #00E0C6;
 }
 
-.megustan ol, ul{
+.megustan h2 {
+    color: aliceblue;
+    padding: 5px;
+    border-bottom: 2px solid aliceblue;
+}
+
+.megustan ol,ul {
     list-style: none;
     text-align: center;
     margin: 5px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.megustan i {
+    position: absolute;
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
 }
 
 .email {
@@ -126,10 +156,15 @@
     padding: 30px;
 }
 
+.email_space {
+    height: 30px;
+}
 .boton {
     height: 70px;
     width: 70px;
     margin: 2px auto;
+    background-color: #009393;
+    color: aliceblue;
 }
 
 textarea {
@@ -149,4 +184,10 @@ footer a {
 
 footer h2 {
     color: aliceblue;
+}
+
+.icon {
+    color: aliceblue;
+    font-size: 20px;
+    margin: 5px;
 }
