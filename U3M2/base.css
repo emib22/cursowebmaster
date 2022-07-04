@@ -36,3 +36,24 @@ aside {
 	float: right;
 	width: 190px;
 }
+
+@media (max-width: 800px) {
+	#contenedor {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	nav {
+		width: 100%;
+		line-height: 30px;
+	}
+
+	section {
+		width: 100%;
+		margin: 0;
+	}
+
+	aside {
+		width: 100%;
+	}
+}
