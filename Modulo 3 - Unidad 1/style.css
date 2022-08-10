@@ -1,0 +1,77 @@
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'PT Sans Narrow', sans-serif;
+*/
+
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+header {
+    background-color: #141313;
+    margin-top: 0px;
+    padding: 15px 15px 0px 15px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+nav.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    font-size: 24px;
+    width: 100%;
+    padding: 5px;
+    margin: 15px 0px 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FE461E;
+}
+
+nav img {
+    width: 125px;
+}
+
+nav li:hover {
+    background-color: #312626;
+    cursor: pointer;
+}
+
+/* comienza edición hero*/
+.imghero {
+    z-index: 0;
+    position: absolute;
+}
+
+.hero {
+    color: aliceblue;
+    z-index: 10;
+    line-height: 2px;
+
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 68px;
+}
