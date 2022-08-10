@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <script>
+        //Crear una función que dada una distancia determine el medio de transporte apropiado de acuerdo a las siguientes reglas:
+
+        //    0 a 1000 metros = pie
+
+        //    1000 a 10000 metros = bicicleta
+
+        //    10000 a 30000 metros = colectivo
+
+        //   30000 a 100000 metros = auto
+
+        //       + 100000 = avión 
+
+        let distancia = prompt("Ingrese la distancia en metros a recorrer:")
+
+        if (distancia<=1000) {
+            document.write("Le conviene viajar a pie")
+        } else if (distancia > 1000 & distancia <= 10000) {    
+            document.write("Le conviene viajar en bicicleta")
+        } else if (distancia > 10000 & distancia <= 30000) {
+            document.write("Le conviene viajar en colectivo")
+        } else if (distancia > 30000 & distancia <= 100000) {
+            document.write("Le conviene viajar en auto")
+        } else  {
+            document.write("Le conviene viajar en avion")
+        }
+
+
+    </script>
+
+</body>
+
+</html>
