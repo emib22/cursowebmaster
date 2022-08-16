@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Javascript</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+
+<body class="body">
+    <p>Ejercicio 1:
+
+        Crear un documento html con 3 cuadrados que, al ser clickeados, cambien el color de fondo del documento. Cada
+        cuadrado
+        deberá tener un color distinto.</p>
+
+    <div class="caja1" id="azul"></div>
+    <div class="caja2" id="rojo"></div>
+    <div class="caja3" id="verde"></div>
+
+    <script>
+        // CSS
+            const body = document.getElementsByClassName('body')[0];
+            const rojo = document.getElementById('rojo');
+            const azul = document.getElementById('azul');
+            const verde = document.getElementById('verde');
+
+
+            azul.addEventListener('click', function () {
+                body.classList.add('caja1');
+                body.classList.remove('caja2', 'caja3');
+            });
+
+            rojo.addEventListener('click', function () {
+                body.classList.add('caja2');
+                body.classList.remove('caja1', 'caja3');
+            });
+
+            verde.addEventListener('click', function () {
+                body.classList.add('caja3');
+                body.classList.remove('caja1', 'caja2');
+            });
+
+
+    </script>
+</body>
+
+</html>
