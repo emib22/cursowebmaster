@@ -11,6 +11,7 @@ var indexRouter = require('./routes/index');
 var productosRouter = require('./routes/productos');
 var nosotrosRouter = require('./routes/nosotros');
 var contactoRouter = require('./routes/contacto');
+var blogRouter = require('./routes/blog');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
 
@@ -50,6 +51,7 @@ app.use('/', indexRouter);
 app.use('/productos', productosRouter);
 app.use('/nosotros', nosotrosRouter);
 app.use('/contacto', contactoRouter);
+app.use('/blog', blogRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', sequred, adminRouter);
 

@@ -1,0 +1,25 @@
+<h2>AGREGAR UNA NUEVA NOTICIA</h2>
+<form class="p-5 container1" action="/admin/novedades/agregar" method="post">
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Título</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default" name="titulo">
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Subtítulo</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default" name="subtitulo">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-text">Cuerpo</span>
+        <textarea class="form-control cuerpo" aria-label="With textarea" name="cuerpo"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Agregar</button>
+</form>
+
+{{#if error}}
+<p> {{message}} </p>
+{{/if}}

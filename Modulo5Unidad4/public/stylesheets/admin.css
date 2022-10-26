@@ -8,6 +8,7 @@ header a {
 
 .nov {
     margin: auto;
+    margin-top: 6px;
     color: #FE461E;
     text-align: center;
 }
@@ -19,4 +20,8 @@ header a {
 
 .close_session {
     background-color: #FE461E;
+}
+
+.cuerpo {
+    height: 200px;
 }
