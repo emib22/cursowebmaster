@@ -1,0 +1,27 @@
+header {
+    text-align: center;
+}
+
+header a {
+    margin-bottom: 20px;
+}
+
+.nov {
+    margin: auto;
+    margin-top: 6px;
+    color: #FE461E;
+    text-align: center;
+}
+
+.bienvenida {
+    font-size: 2rem;
+    color: #FE461E;
+}
+
+.close_session {
+    background-color: #FE461E;
+}
+
+.cuerpo {
+    height: 200px;
+}

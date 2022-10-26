@@ -1,0 +1,354 @@
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'PT Sans Narrow', sans-serif;
+*/
+
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.container1 {
+    width: 60%;
+        margin: 50px auto;
+}
+
+header {
+    background-color: #141313;
+    margin-top: 0px;
+    width: 100%;
+    /*padding: 15px 15px 0px 15px;*/
+    max-height: 200px;
+    overflow: hidden;
+
+}
+
+nav.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    font-size: 24px;
+    width: 100%;
+    padding: 5px;
+    margin: 15px 0px 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FE461E;
+    display: block;
+}
+
+nav img {
+    width: 125px;
+}
+
+nav li:hover {
+    background-color: #312626;
+    cursor: pointer;
+}
+
+/* comienza edición hero*/
+
+.hero-image {
+    width: 100vw;
+    height: 50vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+/*AQUI EDITAMOS LAS TARJETAS*/
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 100px 0px 100px;
+}
+
+.card {
+    width: 25%;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    border: #FE461E solid 1px;
+}
+
+.card i {
+    font-size: 50px;
+    color: #FE461E;
+}
+
+/*AQUI COMIENZAN LOS ESTILOS DEL FOOTER*/
+footer {
+    background-color: #141313;
+    margin-top: 0px;
+    padding: 15px 15px 0px 15px;
+    max-height: 200px;
+    overflow: hidden;
+    width: 100%;
+}
+
+footer div p {
+    color: #FE461E;
+    font-size: 15px;
+}
+
+footer img {
+    width: 70px;
+
+}
+
+.footer_logo {
+    text-align: center;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_footer {
+    border-left: #FE461E solid 1px;
+}
+
+.menu_footer a{
+    text-decoration: none;
+    color: #FE461E;
+}
+
+.menu_footer li {
+list-style: none;
+
+}
+/*ESTILOS PRODUCTOS*/
+
+.productos-text h1 {
+    color: #FE461E;
+    font-size: 28px;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.products-container img {
+
+    border-radius: 10px;
+}
+
+.products-card {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 20px;
+}
+
+.card-text h1 {
+    color: #FE461E;
+}
+
+/*ESTILOS NOSOTROS*/
+
+.hero-nosotros {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/center.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-nosotros h1 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    margin: auto;
+    font-weight: 200;
+}
+
+.nosotros-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.trucks {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+}
+
+.nosotros-container img {
+    border-radius: 50%;
+    width: 200px;
+    
+}
+
+.nosotros-container h2 {
+    font-size: 20px;
+    color: #FE461E;
+}
+
+/*ESTILOS CONTACTO*/
+
+.hero-contacto {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/trucks.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-contacto h1 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    margin: auto;
+    font-weight: 200;
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.formulario {
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color:#FE461E;
+    border-radius: 15px;
+    align-items: center;
+    color: aliceblue;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+.form-container label {
+    min-width: 120px;
+    color: aliceblue;
+}
+
+.form-container input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    resize: none;
+}
+
+.submit {
+    width: 80px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+/*ESTILOS BLOG*/
+
+.hero-blog {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/deportivos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-blog h1 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    margin: auto;
+    font-weight: 200;
+}
+
+.blog_tittle {
+    color: #FE461E;
+}
+/* ALGUNOS AJUSTES MÓVILES */
+
+@media (max-width: 800px) {
+
+    nav img {
+        margin: auto;
+    }
+
+    /*ESTILOS DE INICIO*/
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        height: 100vw;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    /*NOSOTROS*/
+
+    .nosotros-container {
+        flex-direction: column;
+    }
+}
