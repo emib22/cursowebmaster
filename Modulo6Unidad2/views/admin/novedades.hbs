@@ -7,11 +7,18 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-7 text-start">
+        <div class="col-3 text-start">
             <h2 class="bienvenida">Lista de novedades</h2>
         </div>
         <div class="col-5 text-end">
             <a class="btn btn-primary close_session" href="/admin/novedades/agregar">Nuevo +</a>
+        </div>
+        <div class="container-fluid col-4">
+            <form class="d-flex" role="search" action="/admin/novedades" method="get">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="q" {{#if
+                    q}} value="{{q}}" {{/if}}>
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
         </div>
     </div>
 </div>
@@ -29,8 +36,14 @@
         <tr>
             <th scope="row"> {{id}} </th>
             <td> {{titulo}} </td>
-            <td><a class="btn btn-primary" href="/admin/novedades/modificar/{{id}}">Editar</a> <a class="btn btn-primary" href="/admin/novedades/eliminar/{{id}}">Borrar</a></td>
+            <td><a class="btn btn-primary" href="/admin/novedades/modificar/{{id}}">Editar</a> <a
+                    class="btn btn-primary" href="/admin/novedades/eliminar/{{id}}">Borrar</a></td>
         </tr>
         {{/each}}
     </tbody>
-</table> 
+</table>
+{{#if is_search}}
+{{#unless novedades.lenght}}
+<p class="container">No se encontraron resultados para <b> {{q}} </b></p> 
+{{/unless}}
+{{/if}}
